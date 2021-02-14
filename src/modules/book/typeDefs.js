@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server-express');
+const { gql } = require('apollo-server-express')
 
 const typeDefs = gql`
     extend type Query {
@@ -13,11 +13,12 @@ const typeDefs = gql`
     extend type Subscription {
         newBook: Book!
     }
+
     type Book {
         bookId: Int!
         bookName: String!
         author: User!
     }
-`;
+`
 
-module.exports = { typeDefs };
+module.exports = { typeDefs }
